@@ -1,0 +1,15 @@
+services:
+  discord-chatbot:
+    build: .
+    image: discord-chatbot:latest
+    container_name: discord-chatbot
+    volumes:
+      - VolumeC:/app/Discord-ChatBot/config/controller/
+      - VolumeLog:/app/Discord-ChatBot/logs/
+    restart: unless-stopped
+
+volumes:
+  VolumeC:
+    external: true
+  VolumeLog:
+    external: true
