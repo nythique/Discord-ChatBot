@@ -42,7 +42,7 @@ cd ia-discord-bot
 
 ```bash
 pip install -r requirements.txt
-python starter.py
+python run.py
 ```
 
 ### 4. Or Run with Docker
